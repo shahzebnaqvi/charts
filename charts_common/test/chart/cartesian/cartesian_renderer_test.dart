@@ -1,4 +1,4 @@
-// @dart=2.9
+// @dart=3.2.2
 
 // Copyright 2018 the Charts project authors. Please see the AUTHORS file
 // for details.
@@ -54,7 +54,6 @@ class FakeCartesianRenderer extends BaseCartesianRenderer {
   @override
   DatumDetails addPositionToDetailsForSeriesDatum(
       DatumDetails details, SeriesDatum seriesDatum) {
-    assert(details != null);
     return details;
   }
 }

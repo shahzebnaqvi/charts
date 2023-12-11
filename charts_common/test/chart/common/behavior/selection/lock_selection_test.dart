@@ -1,4 +1,4 @@
-// @dart=2.9
+// @dart=3.2.2
 
 // Copyright 2018 the Charts project authors. Please see the AUTHORS file
 // for details.
@@ -62,10 +62,8 @@ void main() {
   }
 
   void _setupChart({Point<double> forPoint, bool isWithinRenderer}) {
-    if (isWithinRenderer != null) {
-      when(_chart.pointWithinRenderer(forPoint)).thenReturn(isWithinRenderer);
+    when(_chart.pointWithinRenderer(forPoint)).thenReturn(isWithinRenderer);
     }
-  }
 
   setUp(() {
     _hoverSelectionModel = MockSelectionModel();
